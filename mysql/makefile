@@ -5,5 +5,6 @@ run:
 	-e TZ=Asia/Shanghai -e MYSQL_INITDB_SKIP_TZINFO \
 	-d mariadb:10.3 \
 	--innodb-buffer-pool-size=512M \
+	--sql_mode= \
 	--character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci 
 
